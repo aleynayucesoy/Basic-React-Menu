@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { AUTH_COOKIE } from "@/lib/constants";
 import { verifyToken } from "@/lib/jwt";
 import LogoutButton from "../components/LogoutButton";
+import ProductPage from "./products/page";
 
 
 export default function AdminDashboard() {
@@ -30,10 +31,12 @@ export default function AdminDashboard() {
           </p>
           <p className="text-gray-500 mt-2">
             This is the area that only residents can see.
+            <ProductPage />
           </p>
+          <LogoutButton />
         </div>
-
-        <LogoutButton />
+        
+        
       </div>
     </div>
   );
