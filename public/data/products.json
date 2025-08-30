@@ -1,0 +1,4 @@
+[
+  { "id": "p1", "name": "Margherita Pizza", "price": 180, "category": "Pizza", "available": true },
+  { "id": "p2", "name": "Cheeseburger",     "price": 130, "category": "Burger", "available": true }
+]
